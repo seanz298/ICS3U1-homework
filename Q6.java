@@ -1,21 +1,20 @@
 /**
 Q6.java
-	Description:   using >=  that will decide if a student should play a game in class. 
+	Description:Write a do-while loop that asks the user to enter a password. The correct password is "JavaFun". Keep asking for the password until it is entered correctly, then print "Access Granted."
 	Name: Sean
-	Date Created: 2024/11/6
-	Date last modified: 2024/11/6
+	Date Created: 2024/11/11
+	Date last modified: 2024/11/11
 */
 import java.util.Scanner;
 public class Q6 {
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-      System.out.println("How many homework questions did you do");
-      int ques = scanner.nextInt();
-      if (ques >= 3){
-      System.out.println("You can play games in class");
-      }
-      else{
-      System.out.println("You can not play games in class");
-      }
+      String cpw = "JavaFun";
+      String pw;
+      do {
+        System.out.println("enter password");
+        pw = scanner.nextLine();
+      }while(!pw.equals(cpw));
+      System.out.println("Access Granted");
     }
 }

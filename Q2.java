@@ -1,21 +1,22 @@
 /**
 Q2.java
-	Description:  . Write a program that asks the user how many pairs of blue jeans they own
+	Description:Write a program that asks the user to enter a number. Use a while loop to keep asking for a new number until the user enters the number 10. When they enter 10, print "You got it!" and end the loop.
 	Name: Sean
-	Date Created: 2024/11/5
-	Date last modified: 2024/11/5
+	Date Created: 2024/11/11
+	Date last modified: 2024/11/11
 */
 import java.util.Scanner;
 public class Q2 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-      System.out.println("how many pairs of blue jeans do you own?");
-      int jeans = scanner.nextInt();
-      if (jeans != 0) {
-        System.out.println("You have a fashionable wardrobe!");  
-      }
-      else {
-        System.out.println("According to Monika, you need at least one pair of blue jeans!");  
+      Scanner scanner = new Scanner(System.in);
+      int num;
+      while (true){
+      System.out.println("enter a number");
+       num = scanner.nextInt();
+        if (num == 10){
+          System.out.println("you gor it");
+          break;
+        }
       }
     }
 }

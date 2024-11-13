@@ -1,21 +1,16 @@
 /**
 Q1.java
-	Description:  a program using .equals()  that will decide whether Alex is in a good or bad mood. 
+	Description:  Write a while loop that prints the numbers from 1 to 5
 	Name: Sean
-	Date Created: 2024/11/5
-	Date last modified: 2024/11/5
+	Date Created: 2024/11/11
+	Date last modified: 2024/11/11
 */
-import java.util.Scanner;
 public class Q1 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("What color does alex use");
-    String color = scanner.nextLine();
-      if (color.equals("red")){
-      System.out.println("Alex is in a bad mood. ");
-      }
-      else{
-      System.out.println("Alex is in a good mood. ");
-             }
+      int num = 1;
+        while (num<=5){
+        System.out.println(num);
+        num++;
+        }
     }
 }

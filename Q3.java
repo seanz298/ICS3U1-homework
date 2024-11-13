@@ -1,21 +1,17 @@
 /**
 Q3.java
-	Description:  a program using <  that will decide whether Hamza is doing too much extra work. 
+	Description: a do-while loop that starts with a counter variable at 0. In each iteration, print the value of the counter, then increase it by 1. Stop the loop when the counter reaches 5.
 	Name: Sean
-	Date Created: 2024/11/6
-	Date last modified: 2024/11/6
+	Date Created: 2024/11/11
+	Date last modified: 2024/11/11
 */
-import java.util.Scanner;
+
 public class Q3 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("How long did Hamza partise in hours");
-      int time = scanner.nextInt();
-      if (time>2){
-        System.out.println("Hamza is doing too much extra work");
-      }
-                else{
-         System.out.println("Hamza isn't doing too much extra work");
-        }
+    int num = 0;
+      do {
+        System.out.println(num);
+        num++;
+      }while (num<=5);
       }
 }
